@@ -89,11 +89,16 @@
   0% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(0.5) rotate(var(--burst-angle))
-      translateY(0);
+      translateY(0) rotate(0deg);
   }
-  100% {
+  80% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.6) rotate(var(--burst-angle))
-      translateY(-48px);
+      translateY(-44px) rotate(288deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.6) rotate(var(--burst-angle))
+      translateY(-48px) rotate(360deg);
   }
 }
