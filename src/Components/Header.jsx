@@ -17,7 +17,7 @@ const Header = () => {
       { angle: "0deg", color: "#b286e7", char: "✩" },
       { angle: "90deg", color: "#f472b6", char: "★" },
       { angle: "180deg", color: "#18eece", char: "✩" },
-      { angle: "270deg", color: "#3da0f1", char: "★" },
+      { angle: "270deg", color: "#9bff7c", char: "✩" },
     ],
 
     [
