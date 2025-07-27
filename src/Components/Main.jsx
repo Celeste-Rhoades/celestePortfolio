@@ -14,19 +14,8 @@ const Main = () => {
           <p className="font-raleway mt-4 px-24 text-center">
             Hi I&apos;m Celeste
           </p>
-          <p className="font-raleway mb-4 px-24 text-center">
-            I&apos;m a software engineer who loves stargazing, great
-            conversation, and coding.
-          </p>
-          <p className="font-raleway mb-8 px-24 text-center">
-            {" "}
-            It all started while I was working in the hospitality field. I kept
-            noticing inconsistencies with the tech and never had exactly what I
-            needed to complete a task within my desired time frame. It left me
-            feeling frustrated, thinking, "If I knew how to code, I&apos;d make
-            an app for that." So, I did just that. I learned how to program and
-            fell in love with learning and building new things.
-          </p>
+
+          <p className="font-raleway mb-8 px-24 text-center"></p>
         </div>
         <div>
           <video></video>

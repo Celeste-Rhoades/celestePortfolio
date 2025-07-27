@@ -50,7 +50,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 1.75rem;
+  font-size: 1.55rem;
   opacity: 1;
   animation: burst 0.8s ease-out forwards;
   transform: translate(-50%, -50%) rotate(var(--burst-angle)) translateY(-28px);
