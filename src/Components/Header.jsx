@@ -44,8 +44,8 @@ const Header = () => {
   };
 
   return (
-    <div className="text-center text-white">
-      <img src={Celeste} className="mx-auto mt-10 h-28 w-28 rounded-full" />
+    <div className="mt-8 text-center text-white">
+      {/* <img src={Celeste} className="mx-auto mt-10 h-28 w-28 rounded-full" /> */}
 
       {/* Gradient hover on each letter */}
       <div className="font-manrope bg-blue/10 mt-6 inline-flex flex-wrap justify-center gap-1 rounded-2xl px-1 py-1 text-7xl shadow-xl backdrop-blur-3xl">
