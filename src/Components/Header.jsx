@@ -48,7 +48,7 @@ const Header = () => {
       <img src={Celeste} className="mx-auto mt-10 h-36 w-36 rounded-full" />
 
       {/* Gradient hover on each letter */}
-      <div className="font-manrope mt-6 inline-flex flex-wrap justify-center gap-1 rounded-2xl bg-black/10 px-1 py-1 text-7xl shadow-xl backdrop-blur-3xl">
+      <div className="font-manrope bg-blue/10 mt-6 inline-flex flex-wrap justify-center gap-1 rounded-2xl px-1 py-1 text-7xl shadow-xl backdrop-blur-3xl">
         {name.split("").map((char, index) => {
           const config = burstConfigs[index % burstConfigs.length];
           return (
@@ -82,7 +82,7 @@ const Header = () => {
       <div className="mt-0 text-2xl">
         <p className="font-ralewaySemi mt-6 inline-flex rounded-xl border border-white/20 bg-black/35 px-6 py-1 text-2xl text-white shadow-xl backdrop-blur-md">
           I&apos;m a software engineer who loves stargazing, great conversation,
-          and coding.
+          and long walks on the beach
         </p>
       </div>
     </div>
