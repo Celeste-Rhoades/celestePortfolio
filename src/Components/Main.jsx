@@ -2,8 +2,8 @@ const Main = () => {
   return (
     <div className="mt-18 flex flex-col justify-center rounded-t-xl border border-white/20 bg-blue-300/20 shadow-xl backdrop-blur-md">
       <div className="mr-10 flex h-[64px] items-center justify-end">
-        <i className="fa-brands fa-linkedin m-8 text-4xl text-white hover:text-[#18bfef]"></i>
-        <i className="fa-brands fa-github text-4xl text-white hover:text-[#18bfef]"></i>
+        <i className="fa-brands fa-linkedin m-4 p-2 text-4xl text-white hover:bg-gradient-to-t hover:from-purple-400 hover:via-cyan-500 hover:to-blue-700"></i>
+        <i className="fa-brands fa-github p-2 text-4xl text-white hover:bg-gradient-to-t hover:from-purple-400 hover:via-cyan-500 hover:to-blue-700"></i>
       </div>
 
       <div className="h-[1000px] bg-white">
