@@ -7,31 +7,31 @@ const Header = () => {
 
   const burstConfigs = [
     [
-      { angle: "0deg", color: "#18eece", char: "★" },
-      { angle: "72deg", color: "#9bff7c", char: "✩" },
-      { angle: "144deg", color: "#3da0f1", char: "★" },
-      { angle: "216deg", color: "#b286e7", char: "✩" },
-      { angle: "288deg", color: "#ff8ad2", char: "★" },
+      { angle: "0deg", color: "#f5beef", char: "★" },
+      { angle: "72deg", color: "#9370BF", char: "✩" },
+      { angle: "144deg", color: "#6AA1DA", char: "★" },
+      { angle: "216deg", color: "#8B83C6", char: "✩" },
+      { angle: "288deg", color: "#97E6EA", char: "★" },
     ],
     [
-      { angle: "0deg", color: "#b286e7", char: "✩" },
-      { angle: "90deg", color: "#f472b6", char: "★" },
-      { angle: "180deg", color: "#18eece", char: "✩" },
-      { angle: "270deg", color: "#9bff7c", char: "✩" },
+      { angle: "0deg", color: "#8B83C6", char: "✩" },
+      { angle: "90deg", color: "#97E6EA", char: "★" },
+      { angle: "180deg", color: "#f5beef", char: "✩" },
+      { angle: "270deg", color: "#9370BF", char: "✩" },
     ],
 
     [
-      { angle: "0deg", color: "#f472b6", char: "✩ " },
-      { angle: "72deg", color: "#b286e7", char: "★" },
-      { angle: "144deg", color: "#9bff7c", char: "✩" },
-      { angle: "216deg", color: "#18eece", char: "★" },
-      { angle: "288deg", color: "#3da0f1", char: "✩" },
+      { angle: "0deg", color: "#97E6EA", char: "✩ " },
+      { angle: "72deg", color: "#8B83C6", char: "★" },
+      { angle: "144deg", color: "#9370BF", char: "✩" },
+      { angle: "216deg", color: "#f5beef", char: "★" },
+      { angle: "288deg", color: "#6AA1DA", char: "✩" },
     ],
     [
-      { angle: "0deg", color: "#3da0f1", char: "★" },
-      { angle: "90deg", color: "#18eece", char: "✩" },
-      { angle: "180deg", color: "#f472b6", char: "★" },
-      { angle: "270deg", color: "#b286e7", char: "✩" },
+      { angle: "0deg", color: "#6AA1DA", char: "★" },
+      { angle: "90deg", color: "#f5beef", char: "✩" },
+      { angle: "180deg", color: "#97E6EA", char: "★" },
+      { angle: "270deg", color: "#8B83C6", char: "✩" },
     ],
   ];
 
