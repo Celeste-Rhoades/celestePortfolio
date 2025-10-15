@@ -18,10 +18,10 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="flex min-h-[200px] items-center justify-center rounded-xl bg-slate-100 p-8">
+        <div className="flex min-h-[200px] items-center justify-center rounded-xl bg-slate-100 p-8 dark:bg-neutral-800">
           <div className="text-center">
             <i className="fa-solid fa-triangle-exclamation mb-4 text-4xl text-red-400"></i>
-            <p className="font-raleway text-neutral-600">
+            <p className="font-raleway text-neutral-600 dark:text-neutral-300">
               {this.props.fallbackMessage ||
                 "Something went wrong loading this content."}
             </p>

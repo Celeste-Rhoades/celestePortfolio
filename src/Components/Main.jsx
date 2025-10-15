@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import ClientCarousel from "./ClientCarousel";
 import ErrorBoundary from "./ErrorBoundary";
+import ThemeToggle from "./ThemeToggle";
 
 const Main = () => {
   const featuredProjects = [
@@ -17,8 +18,7 @@ const Main = () => {
         "MongoDB",
       ],
       videoSrc: "/videos/back-to-calm.mp4",
-      githubLink: "https://github.com/yourusername/back-to-calm",
-      status: "In Development",
+      githubLink: "https://github.com/Celeste-Rhoades/BackToCalm",
     },
     {
       id: 2,
@@ -34,18 +34,18 @@ const Main = () => {
         "Socket.io",
       ],
       videoSrc: "/videos/simply-the-best.mp4",
-      githubLink: "https://github.com/yourusername/simply-the-best",
-      liveLink: "https://simplythebest.com",
+      githubLink: "https://github.com/Celeste-Rhoades/Simply-The-Best",
+      liveLink: "https://getsimplythebest.net",
     },
     {
       id: 3,
-      title: "Miami Vice Theme",
+      title: "Miami Vice Color Theme",
       description:
         "A VS Code color theme inspired by 80s Miami aesthetics with vibrant neon colors and high contrast for optimal readability. Over 1,000 downloads on the VS Code Marketplace.",
       techStack: ["VS Code Extension", "JSON", "Color Theory"],
       videoSrc: "/videos/vscode-theme.mp4",
       marketplaceLink:
-        "https://marketplace.visualstudio.com/items?itemName=yourname.miami-vice-electric",
+        "https://marketplace.visualstudio.com/items?itemName=CelesteDesigns.miami-vice-color-theme",
     },
   ];
 
@@ -67,7 +67,7 @@ const Main = () => {
         "Developed a service-based business website with appointment scheduling, service area mapping, and customer testimonials.",
       impact: "Streamlined customer acquisition and booking process",
       year: "2023",
-      imageSrc: "/images/grand-gutters.png",
+      imageSrc: "",
     },
     {
       id: 3,
@@ -90,61 +90,61 @@ const Main = () => {
   ];
 
   return (
-    <div className="mt-18 flex flex-col justify-center rounded-t-xl border border-white/20 bg-blue-300/20 shadow-xl backdrop-blur-md">
-      {/* Social links */}
+    <div className="mt-8 flex flex-col justify-center rounded-t-xl border border-white/20 bg-white/10 shadow-xl backdrop-blur-md transition-all duration-300 md:mt-18 dark:border-white/10 dark:bg-black/20">
       <nav
-        className="mr-10 flex h-[64px] items-center justify-end"
-        aria-label="Social media links"
+        className="flex h-[56px] items-center justify-between px-4 md:h-[64px] md:px-10"
+        aria-label="Theme and social links"
       >
-        <a
-          href="https://www.linkedin.com/in/yourprofile"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn Profile"
-          className="m-4 p-2 text-4xl text-white transition-all duration-300 hover:rounded-xl hover:bg-gradient-to-t hover:from-rose-300 hover:via-sky-200 hover:to-teal-300 focus:ring-2 focus:ring-white focus:outline-none"
-        >
-          <i className="fa-brands fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub Profile"
-          className="p-2 text-4xl text-white transition-all duration-300 hover:rounded-xl hover:bg-gradient-to-t hover:from-rose-300 hover:via-sky-200 hover:to-teal-300 focus:ring-2 focus:ring-white focus:outline-none"
-        >
-          <i className="fa-brands fa-github" aria-hidden="true"></i>
-        </a>
+        <ThemeToggle />
+
+        <div className="flex items-center gap-2 md:gap-4">
+          <a
+            href="https://www.linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+            className="rounded-xl p-2 text-3xl text-white transition-all duration-300 hover:bg-gradient-to-t hover:from-rose-300 hover:via-sky-200 hover:to-teal-300 focus:ring-2 focus:ring-white focus:outline-none md:text-4xl"
+          >
+            <i className="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+            className="rounded-xl p-2 text-3xl text-white transition-all duration-300 hover:bg-gradient-to-t hover:from-rose-300 hover:via-sky-200 hover:to-teal-300 focus:ring-2 focus:ring-white focus:outline-none md:text-4xl"
+          >
+            <i className="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
       </nav>
 
-      {/* Main content */}
-      <main className="min-h-screen bg-white pb-16">
-        {/* Intro */}
-        <header className="mx-4 border-b border-b-slate-400 pb-8 md:mx-24">
-          <h1 className="font-poiretOne mt-14 text-center text-4xl text-neutral-600 md:text-6xl">
+      <main className="min-h-screen bg-white/95 pb-16 backdrop-blur-sm transition-all duration-300 dark:bg-neutral-800/90">
+        <header className="mx-4 border-b border-b-slate-400 pb-6 transition-all duration-300 md:mx-24 md:pb-8 dark:border-b-neutral-600">
+          <h1 className="font-poiretOne mt-8 text-center text-3xl text-neutral-600 transition-all duration-300 md:mt-14 md:text-6xl dark:text-neutral-100">
             Beyond the Code
           </h1>
-          <p className="font-poiretOne mt-4 px-4 text-center text-lg text-neutral-600 md:px-24">
+          <p className="font-poiretOne mt-3 px-4 text-center text-base text-neutral-600 transition-all duration-300 md:mt-4 md:px-24 md:text-lg dark:text-neutral-200">
             Hi I&apos;m Celeste
           </p>
-          <p className="font-raleway mt-2 px-4 text-center text-neutral-500 md:px-24">
+          <p className="font-raleway mt-2 px-4 text-center text-sm text-neutral-500 transition-all duration-300 md:px-24 md:text-base dark:text-neutral-300">
             Full-stack software engineer specializing in the MERN stack,
             building scalable applications that solve real problems.
           </p>
         </header>
 
-        {/* Featured Projects */}
         <section
-          className="mx-4 mt-16 md:mx-24"
+          className="mx-4 mt-12 md:mx-24 md:mt-16"
           aria-labelledby="featured-projects-heading"
         >
           <h2
             id="featured-projects-heading"
-            className="font-poiretOne mb-8 text-center text-4xl text-neutral-600 md:text-5xl"
+            className="font-poiretOne mb-6 text-center text-3xl text-neutral-600 transition-all duration-300 md:mb-8 md:text-5xl dark:text-neutral-100"
           >
             Featured Projects
           </h2>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2 xl:grid-cols-3">
             {featuredProjects.map((project) => (
               <ErrorBoundary
                 key={project.id}
@@ -156,14 +156,13 @@ const Main = () => {
           </div>
         </section>
 
-        {/* Client Work */}
         <section
-          className="mx-4 mt-24 md:mx-24"
+          className="mx-4 mt-16 md:mx-24 md:mt-24"
           aria-labelledby="client-work-heading"
         >
           <h2
             id="client-work-heading"
-            className="font-poiretOne mb-8 text-center text-4xl text-neutral-600 md:text-5xl"
+            className="font-poiretOne mb-6 text-center text-3xl text-neutral-600 transition-all duration-300 md:mb-8 md:text-5xl dark:text-neutral-100"
           >
             Client Work
           </h2>

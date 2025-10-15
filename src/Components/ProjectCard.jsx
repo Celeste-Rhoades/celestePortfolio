@@ -10,20 +10,17 @@ const ProjectCard = ({ project }) => {
   const cardRef = useRef(null);
   const observerRef = useRef(null);
 
-  // Handle video load
   const handleVideoLoad = useCallback(() => {
     setIsVideoLoaded(true);
     setVideoError(false);
   }, []);
 
-  // Handle video error
   const handleVideoError = useCallback(() => {
     setVideoError(true);
     setIsVideoLoaded(false);
     console.error(`Failed to load video: ${project.videoSrc}`);
   }, [project.videoSrc]);
 
-  // Intersection Observer for lazy loading
   useEffect(() => {
     const currentCardRef = cardRef.current;
 
@@ -54,7 +51,6 @@ const ProjectCard = ({ project }) => {
     };
   }, [isVideoLoaded, videoError]);
 
-  // Handle hover video playback
   const handleMouseEnter = useCallback(() => {
     setIsHovered(true);
     if (videoRef.current && isVideoLoaded && !videoError) {
@@ -80,7 +76,6 @@ const ProjectCard = ({ project }) => {
     }
   }, [isPlaying]);
 
-  // Keyboard accessibility
   const handleKeyDown = useCallback(
     (e) => {
       if (e.key === "Enter" || e.key === " ") {
@@ -98,7 +93,7 @@ const ProjectCard = ({ project }) => {
   return (
     <article
       ref={cardRef}
-      className="group relative overflow-hidden rounded-xl bg-slate-100 shadow-lg transition-all duration-300 focus-within:ring-2 focus-within:ring-teal-400 hover:shadow-2xl"
+      className="group relative overflow-hidden rounded-xl bg-slate-100 shadow-lg transition-all duration-300 focus-within:ring-2 focus-within:ring-teal-400 hover:shadow-2xl dark:bg-neutral-700 dark:shadow-neutral-950"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onKeyDown={handleKeyDown}
@@ -106,8 +101,7 @@ const ProjectCard = ({ project }) => {
       role="button"
       aria-label={`View details for ${project.title}`}
     >
-      {/* Video/Poster container */}
-      <div className="relative aspect-video w-full overflow-hidden bg-slate-200">
+      <div className="relative aspect-video w-full overflow-hidden bg-slate-200 dark:bg-neutral-600">
         {!videoError ? (
           <>
             <video
@@ -126,55 +120,40 @@ const ProjectCard = ({ project }) => {
               Your browser does not support the video tag.
             </video>
 
-            {/* Loading state */}
             {!isVideoLoaded && (
-              <div className="absolute inset-0 flex items-center justify-center bg-slate-200">
-                <div className="h-12 w-12 animate-spin rounded-full border-4 border-slate-300 border-t-teal-400"></div>
+              <div className="absolute inset-0 flex items-center justify-center bg-slate-200 dark:bg-neutral-600">
+                <div className="h-12 w-12 animate-spin rounded-full border-4 border-slate-300 border-t-teal-400 dark:border-neutral-500 dark:border-t-teal-400"></div>
               </div>
             )}
           </>
         ) : (
-          // Error state
-          <div className="absolute inset-0 flex items-center justify-center bg-slate-200">
+          <div className="absolute inset-0 flex items-center justify-center bg-slate-200 dark:bg-neutral-600">
             <div className="text-center">
-              <i className="fa-solid fa-video-slash text-4xl text-slate-400"></i>
-              <p className="mt-2 text-sm text-slate-500">Video unavailable</p>
+              <i className="fa-solid fa-video-slash text-4xl text-slate-400 dark:text-neutral-400"></i>
+              <p className="mt-2 text-sm text-slate-500 dark:text-neutral-300">
+                Video unavailable
+              </p>
             </div>
           </div>
         )}
       </div>
 
-      {/* Slide-up info overlay */}
       <div
-        className={`absolute right-0 bottom-0 left-0 bg-gradient-to-t from-black/95 via-black/90 to-transparent p-6 transition-all duration-500 ease-in-out ${
-          isHovered ? "translate-y-0" : "translate-y-[calc(100%-4rem)]"
+        className={`absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/95 via-black/85 to-transparent p-4 transition-all duration-500 ease-in-out md:p-6 dark:from-neutral-950/95 dark:via-neutral-900/85 ${
+          isHovered ? "opacity-100" : "opacity-0"
         }`}
       >
-        {/* Always visible title */}
-        <h3 className="font-poiretOne mb-2 text-2xl font-bold text-white">
-          {project.title}
-        </h3>
+        <div className="max-h-full overflow-y-auto">
+          <h3 className="font-poiretOne mb-3 text-xl leading-tight font-bold text-white md:text-2xl">
+            {project.title}
+          </h3>
 
-        {/* Status badge */}
-        {project.status && (
-          <span className="mb-2 inline-block rounded-full bg-teal-400/20 px-3 py-1 text-xs font-semibold text-teal-300">
-            {project.status}
-          </span>
-        )}
-
-        {/* Content revealed on hover */}
-        <div
-          className={`transition-opacity duration-300 ${
-            isHovered ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <p className="font-raleway mb-4 text-sm leading-relaxed text-slate-200">
+          <p className="font-raleway mb-3 text-xs leading-relaxed text-slate-200 md:text-sm">
             {project.description}
           </p>
 
-          {/* Tech stack */}
           <div
-            className="mb-4 flex flex-wrap gap-2"
+            className="mb-3 flex flex-wrap gap-2"
             role="list"
             aria-label="Technologies used"
           >
@@ -189,8 +168,7 @@ const ProjectCard = ({ project }) => {
             ))}
           </div>
 
-          {/* Links */}
-          <nav className="flex gap-3" aria-label="Project links">
+          <nav className="flex flex-wrap gap-2" aria-label="Project links">
             {project.githubLink && (
               <a
                 href={project.githubLink}

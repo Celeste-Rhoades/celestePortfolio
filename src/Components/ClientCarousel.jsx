@@ -8,15 +8,13 @@ const ClientCarousel = ({ clients }) => {
   const animationFrameRef = useRef(null);
   const scrollPositionRef = useRef(0);
 
-  // Speed in pixels per frame (adjust for faster/slower scroll)
-  const scrollSpeed = 0.5;
+  const scrollSpeed = 1;
 
-  // Calculate total width of one set of cards
-  const cardWidth = 400;
-  const gap = 24; // 6 * 4px (gap-6)
+  // Responsive card width
+  const cardWidth = window.innerWidth < 768 ? 300 : 400;
+  const gap = 24;
   const singleSetWidth = clients.length * (cardWidth + gap);
 
-  // Animate scroll using requestAnimationFrame
   const animate = useCallback(() => {
     if (!scrollContainerRef.current || isPaused) {
       return;
@@ -24,7 +22,6 @@ const ClientCarousel = ({ clients }) => {
 
     scrollPositionRef.current += scrollSpeed;
 
-    // Reset position when we've scrolled past one complete set
     if (scrollPositionRef.current >= singleSetWidth) {
       scrollPositionRef.current = 0;
     }
@@ -34,7 +31,6 @@ const ClientCarousel = ({ clients }) => {
     animationFrameRef.current = requestAnimationFrame(animate);
   }, [isPaused, singleSetWidth]);
 
-  // Start animation
   useEffect(() => {
     animationFrameRef.current = requestAnimationFrame(animate);
 
@@ -45,7 +41,6 @@ const ClientCarousel = ({ clients }) => {
     };
   }, [animate]);
 
-  // Triple the array for seamless infinite loop
   const extendedClients = [...clients, ...clients, ...clients];
 
   return (
@@ -54,6 +49,8 @@ const ClientCarousel = ({ clients }) => {
         className="relative"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
+        onTouchStart={() => setIsPaused(true)}
+        onTouchEnd={() => setIsPaused(false)}
         role="region"
         aria-label="Client work carousel"
       >
@@ -77,7 +74,6 @@ const ClientCarousel = ({ clients }) => {
         </div>
       </div>
 
-      {/* Visual indicator that carousel is paused */}
       {isPaused && (
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/10">
           <div className="rounded-full bg-white/90 px-4 py-2 shadow-lg">
