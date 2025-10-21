@@ -65,7 +65,7 @@ const Main = () => {
         "Designed and built a custom e-commerce experience using JavaScript and responsive front-end frameworks, supporting personalized purchasing flows and driving over $50,000 in sales.",
       impact:
         "Created comprehensive UI design system and wireframes for branded storefront, optimizing user experience through strategic UX/UI and front-end development",
-      year: "2023",
+      year: "2025",
       imageSrc: "/images/EmpireToffee.png",
     },
     {
@@ -84,7 +84,7 @@ const Main = () => {
         "Built a conversion-focused marketing website with integrated social media and local SEO optimization to capture high-intent search traffic and drive consistent lead generation.",
       impact:
         "Increased sales by 80% through improved online visibility and streamlined customer inquiry process",
-      year: "2023",
+      year: "2024",
       imageSrc: "/images/GrandGutters.png",
     },
     {
