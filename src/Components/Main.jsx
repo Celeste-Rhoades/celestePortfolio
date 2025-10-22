@@ -62,7 +62,7 @@ const Main = () => {
       id: 1,
       name: "Empire Toffee",
       description:
-        "E-commerce toffee specialty shop. Designed personalized e-commerce solution using JavaScript, HTML5, and responsive front-end frameworks, increasing sales by over $50,000.",
+        "Designed and built a custom e-commerce experience using JavaScript and responsive front-end frameworks, supporting personalized purchasing flows and driving over $50,000 in sales.",
       impact:
         "Created comprehensive UI design system and wireframes for branded storefront, optimizing user experience through strategic UX/UI and front-end development",
       year: "2023",
@@ -72,7 +72,7 @@ const Main = () => {
       id: 2,
       name: "Savvy Ledgers",
       description:
-        "Website for startup accounting firm with over $120K in revenue. Generated over $40,000 annually by developing an SEO-driven website with strategic keyword implementation and search engine best practices that achieved first-page rankings.",
+        "Built an SEO-driven website for a growing accounting firm, applying strategic keyword research and search best practices to achieve first-page rankings and support a business generating over $120K in revenue.",
       impact: "100+ annual clients through improved online presence",
       year: "2023",
       imageSrc: "/images/SavvyLedgers.png",
@@ -81,7 +81,7 @@ const Main = () => {
       id: 3,
       name: "Grand Gutters",
       description:
-        "Professional seamless gutter installation service. Built a conversion-focused website with integrated social media presence and strategic SEO optimization to capture local search traffic.",
+        "Built a conversion-focused marketing website with integrated social media and local SEO optimization to capture high-intent search traffic and drive consistent lead generation.",
       impact:
         "Increased sales by 80% through improved online visibility and streamlined customer inquiry process",
       year: "2023",
