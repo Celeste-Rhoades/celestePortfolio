@@ -58,13 +58,13 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="flex flex-grow flex-col p-6">
-        <h3 className="font-poiretOne mb-2 text-center text-xl font-bold text-neutral-800 transition-colors duration-300 md:text-2xl dark:text-neutral-100">
+        <h3 className="font-poiretOne mb-2 text-center text-xl text-neutral-800 transition-colors duration-300 md:text-2xl dark:text-neutral-100">
           {project.title}
         </h3>
 
         {project.status && (
           <div className="mb-3 flex justify-center">
-            <span className="inline-block rounded-full bg-teal-400/20 px-3 py-1 text-xs font-semibold text-teal-600 dark:text-teal-300">
+            <span className="inline-block rounded-full bg-teal-400/20 px-3 py-1 text-xs text-teal-600 dark:text-teal-300">
               {project.status}
             </span>
           </div>
