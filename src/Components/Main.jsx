@@ -9,7 +9,7 @@ const Main = () => {
       id: 1,
       title: "Back to Calm",
       description:
-        "A React Native mental health app featuring a 4-step panic attack walkthrough, emotion tracking, breathing exercises, and therapeutic interventions built in collaboration with Dr. Rita Edmonds, Ed.D.",
+        "A React Native mental health app providing real-time panic attack intervention through a 4-step guided process developed in collaboration with Dr. Rita Edmonds, Ed.D. Features emotion tracking, thought distortion identification, positive reframing techniques, detailed panic attack logging with symptom tracking, and daily breathing exercises with binaural beats.",
       techStack: [
         "React Native",
         "TypeScript",
@@ -17,27 +17,31 @@ const Main = () => {
         "Node.js",
         "Express",
         "MongoDB",
-        "Tailwind CSS",
-        "RESTful APIs",
         "Firebase",
+        "Firestore",
+        "Firebase Storage",
       ],
-      videoSrc: "/mp4/toDo.mp4",
+      videoSrc: "/mp4/Back2Calm.mp4",
       githubLink: "https://github.com/Celeste-Rhoades/BackToCalm",
     },
     {
       id: 2,
       title: "Simply The Best",
       description:
-        "A social recommendation platform with friend request systems, real-time Socket.io notifications, privacy controls, and mobile-responsive design.",
+        "A full-stack social recommendation platform where users organize and share recommendations across 24+ categories. Features real-time notifications via WebSockets, friend request system with acceptance/decline functionality, privacy controls for public/friends-only/private recommendations, mobile-optimized interface with swipe gestures, and dual authentication supporting both Google OAuth and traditional login.",
       techStack: [
         "React",
         "TypeScript",
+        "JavaScript",
         "Node.js",
         "Express",
         "MongoDB",
         "Socket.io",
+        "Passport.js",
+        "JWT",
+        "Tailwind CSS",
       ],
-      videoSrc: "/mp4/toDo.mp4",
+      videoSrc: "/mp4/simplyTheBest.mp4",
       githubLink: "https://github.com/Celeste-Rhoades/Simply-The-Best",
       liveLink: "https://getsimplythebest.net",
     },
@@ -58,9 +62,9 @@ const Main = () => {
       id: 1,
       name: "Empire Toffee",
       description:
-        "Built a full e-commerce platform with product catalog, shopping cart, and secure checkout integration.",
+        "E-commerce toffee specialty shop. Designed personalized e-commerce solution using JavaScript, HTML5, and responsive front-end frameworks, increasing sales by over $50,000.",
       impact:
-        "Enabled online sales and expanded customer reach beyond local markets",
+        "Created comprehensive UI design system and wireframes for branded storefront, optimizing user experience through strategic UX/UI and front-end development",
       year: "2023",
       imageSrc: "/images/EmpireToffee.png",
     },
@@ -68,8 +72,8 @@ const Main = () => {
       id: 2,
       name: "Savvy Ledgers",
       description:
-        "Created a professional accounting firm website with service pages, client portal access, and contact forms.",
-      impact: "Generated 100+ annual clients through improved online presence",
+        "Website for startup accounting firm with over $120K in revenue. Generated over $40,000 annually by developing an SEO-driven website with strategic keyword implementation and search engine best practices that achieved first-page rankings.",
+      impact: "100+ annual clients through improved online presence",
       year: "2023",
       imageSrc: "/images/SavvyLedgers.png",
     },
@@ -77,8 +81,9 @@ const Main = () => {
       id: 3,
       name: "Grand Gutters",
       description:
-        "Developed a service-based business website with appointment scheduling, service area mapping, and customer testimonials.",
-      impact: "Streamlined customer acquisition and booking process",
+        "Professional seamless gutter installation service. Built a conversion-focused website with integrated social media presence and strategic SEO optimization to capture local search traffic.",
+      impact:
+        "Increased sales by 80% through improved online visibility and streamlined customer inquiry process",
       year: "2023",
       imageSrc: "/images/GrandGutters.png",
     },
@@ -86,8 +91,9 @@ const Main = () => {
       id: 4,
       name: "Breathe Skin Care",
       description:
-        "Designed and built custom branding, banner graphics, and Square POS integration for seamless online ordering.",
-      impact: "$30K in sales through integrated e-commerce solution",
+        "Full-service spa specializing in esthetician treatments and professional skin care. Built a custom website gathering client requirements and delivering a responsive, user-centered solution with integrated e-commerce capabilities.",
+      impact:
+        "Generated over $30K in sales through Square POS integration, gift card platform, and automated Zapier workflows for seamless online ordering",
       year: "2022",
       imageSrc: "/images/BreatheSkinCare.png",
     },
