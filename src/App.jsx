@@ -7,7 +7,7 @@ function App() {
   return (
     <ThemeProvider>
       <div className="relative min-h-screen">
-        <div className="fixed inset-0 -z-10 bg-[url('./assets/images/moab1.jpg')] bg-cover bg-center bg-no-repeat brightness-100 transition-all duration-300 dark:brightness-[0.85]" />
+        <div className="fixed inset-0 -z-10 bg-[url('/images/moab1.jpg')] bg-cover bg-center bg-no-repeat brightness-100 transition-all duration-300 dark:brightness-[0.85]" />
 
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="font-display">

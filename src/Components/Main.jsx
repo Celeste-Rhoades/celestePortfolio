@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import ClientCarousel from "./ClientCarousel";
 import ErrorBoundary from "./ErrorBoundary";
-import ThemeToggle from "./themeToggle";
+import ThemeToggle from "./ThemeToggle";
 
 const Main = () => {
   const featuredProjects = [
@@ -13,11 +13,15 @@ const Main = () => {
       techStack: [
         "React Native",
         "TypeScript",
+        "JavaScript",
         "Node.js",
         "Express",
         "MongoDB",
+        "Tailwind CSS",
+        "RESTful APIs",
+        "Firebase",
       ],
-      videoSrc: "/videos/back-to-calm.mp4",
+      videoSrc: "/mp4/toDo.mp4",
       githubLink: "https://github.com/Celeste-Rhoades/BackToCalm",
     },
     {
@@ -33,7 +37,7 @@ const Main = () => {
         "MongoDB",
         "Socket.io",
       ],
-      videoSrc: "/videos/simply-the-best.mp4",
+      videoSrc: "/mp4/toDo.mp4",
       githubLink: "https://github.com/Celeste-Rhoades/Simply-The-Best",
       liveLink: "https://getsimplythebest.net",
     },
@@ -42,8 +46,8 @@ const Main = () => {
       title: "Miami Vice Color Theme",
       description:
         "A VS Code color theme inspired by 80s Miami aesthetics with vibrant neon colors and high contrast for optimal readability. Over 1,000 downloads on the VS Code Marketplace.",
-      techStack: ["VS Code Extension", "JSON", "Color Theory"],
-      videoSrc: "/videos/vscode-theme.mp4",
+      techStack: ["VS Code Extension", "JSON"],
+      videoSrc: "/mp4/VsCodeTheme.mp4",
       marketplaceLink:
         "https://marketplace.visualstudio.com/items?itemName=CelesteDesigns.miami-vice-color-theme",
     },
@@ -58,25 +62,25 @@ const Main = () => {
       impact:
         "Enabled online sales and expanded customer reach beyond local markets",
       year: "2023",
-      imageSrc: "/images/empire-toffee.png",
+      imageSrc: "/images/EmpireToffee.png",
     },
     {
       id: 2,
-      name: "Grand Gutters",
-      description:
-        "Developed a service-based business website with appointment scheduling, service area mapping, and customer testimonials.",
-      impact: "Streamlined customer acquisition and booking process",
-      year: "2023",
-      imageSrc: "",
-    },
-    {
-      id: 3,
       name: "Savvy Ledgers",
       description:
         "Created a professional accounting firm website with service pages, client portal access, and contact forms.",
       impact: "Generated 100+ annual clients through improved online presence",
       year: "2023",
-      imageSrc: "/images/savvy-ledgers.png",
+      imageSrc: "/images/SavvyLedgers.png",
+    },
+    {
+      id: 3,
+      name: "Grand Gutters",
+      description:
+        "Developed a service-based business website with appointment scheduling, service area mapping, and customer testimonials.",
+      impact: "Streamlined customer acquisition and booking process",
+      year: "2023",
+      imageSrc: "/images/GrandGutters.png",
     },
     {
       id: 4,
@@ -85,7 +89,7 @@ const Main = () => {
         "Designed and built custom branding, banner graphics, and Square POS integration for seamless online ordering.",
       impact: "$30K in sales through integrated e-commerce solution",
       year: "2022",
-      imageSrc: "/images/breathe-skincare.png",
+      imageSrc: "/images/BreatheSkinCare.png",
     },
   ];
 
@@ -99,7 +103,7 @@ const Main = () => {
 
         <div className="flex items-center gap-2 md:gap-4">
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/celeste-rhoades/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
@@ -108,7 +112,7 @@ const Main = () => {
             <i className="fa-brands fa-linkedin" aria-hidden="true"></i>
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Celeste-Rhoades"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"

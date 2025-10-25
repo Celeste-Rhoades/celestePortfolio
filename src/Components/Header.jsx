@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Celeste from "../assets/images/Celeste.png";
 
 const Header = () => {
   const name = "CELESTE RHOADES";
@@ -7,30 +6,30 @@ const Header = () => {
 
   const burstConfigs = [
     [
-      { angle: "0deg", color: "#5EEAD4", char: "★" },
-      { angle: "72deg", color: "#FDA4AF", char: "✩" },
-      { angle: "144deg", color: "#BAE6FD", char: "★" },
-      { angle: "216deg", color: "#ef94ad", char: "✩" },
-      { angle: "288deg", color: " #b5a4d7", char: "★" },
+      { angle: "0deg", color: "#5EEAD4", char: "★", delay: 0 },
+      { angle: "75deg", color: "#FDA4AF", char: "✩", delay: 0.05 },
+      { angle: "140deg", color: "#BAE6FD", char: "★", delay: 0.1 },
+      { angle: "215deg", color: "#ef94ad", char: "✩", delay: 0.08 },
+      { angle: "290deg", color: "#b5a4d7", char: "★", delay: 0.03 },
     ],
     [
-      { angle: "0deg", color: "#BAE6FD", char: "✩" },
-      { angle: "90deg", color: "#ef94ad", char: "★" },
-      { angle: "180deg", color: "#5EEAD4", char: "✩" },
-      { angle: "270deg", color: "#FDA4AF", char: "✩" },
+      { angle: "30deg", color: "#BAE6FD", char: "✩", delay: 0.02 },
+      { angle: "100deg", color: "#ef94ad", char: "★", delay: 0.06 },
+      { angle: "175deg", color: "#5EEAD4", char: "✩", delay: 0.04 },
+      { angle: "260deg", color: "#FDA4AF", char: "✩", delay: 0.09 },
     ],
     [
-      { angle: "0deg", color: "#FDA4AF", char: "★" },
-      { angle: "72deg", color: "#5EEAD4", char: "✩" },
-      { angle: "144deg", color: "#b5a4d7", char: "★" },
-      { angle: "216deg", color: "#BAE6FD", char: "✩" },
-      { angle: "288deg", color: "#ef94ad", char: "★" },
+      { angle: "15deg", color: "#FDA4AF", char: "★", delay: 0.03 },
+      { angle: "80deg", color: "#5EEAD4", char: "✩", delay: 0.07 },
+      { angle: "150deg", color: "#b5a4d7", char: "★", delay: 0 },
+      { angle: "220deg", color: "#BAE6FD", char: "✩", delay: 0.05 },
+      { angle: "295deg", color: "#ef94ad", char: "★", delay: 0.08 },
     ],
     [
-      { angle: "0deg", color: "#b5a4d7", char: "★" },
-      { angle: "90deg", color: "#BAE6FD", char: "✩" },
-      { angle: "180deg", color: "#FDA4AF", char: "★" },
-      { angle: "270deg", color: "#5EEAD4", char: "✩" },
+      { angle: "45deg", color: "#b5a4d7", char: "★", delay: 0.04 },
+      { angle: "110deg", color: "#BAE6FD", char: "✩", delay: 0.02 },
+      { angle: "185deg", color: "#FDA4AF", char: "★", delay: 0.06 },
+      { angle: "275deg", color: "#5EEAD4", char: "✩", delay: 0 },
     ],
   ];
 
@@ -45,7 +44,7 @@ const Header = () => {
   return (
     <div className="mt-4 text-center text-white md:mt-8">
       <img
-        src={Celeste}
+        src="/images/Celeste.png"
         alt="Celeste Rhoades"
         className="mx-auto mt-6 h-24 w-24 rounded-full ring-4 ring-white/20 transition-all duration-300 md:mt-10 md:h-28 md:w-28 dark:ring-white/10"
       />
@@ -73,7 +72,11 @@ const Header = () => {
                     <span
                       key={i}
                       className="burst-star-mobile md:burst-star"
-                      style={{ "--burst-angle": star.angle, color: star.color }}
+                      style={{
+                        "--burst-angle": star.angle,
+                        color: star.color,
+                        animationDelay: `${star.delay}s`,
+                      }}
                     >
                       {star.char}
                     </span>

@@ -14,7 +14,7 @@ const ClientCard = ({ client }) => {
 
       <div className="p-6">
         <div className="mb-2 flex items-center justify-between">
-          <h3 className="font-poiretOne text-xl font-bold text-neutral-700 transition-colors duration-300 md:text-2xl dark:text-neutral-200">
+          <h3 className="font-poiretOne text-xl text-neutral-700 transition-colors duration-300 md:text-2xl dark:text-neutral-200">
             {client.name}
           </h3>
           <time
@@ -30,7 +30,7 @@ const ClientCard = ({ client }) => {
         </p>
 
         <div className="rounded-lg bg-gradient-to-r from-teal-50 to-sky-50 p-3 transition-colors duration-300 dark:from-teal-900/20 dark:to-sky-900/20">
-          <p className="text-xs font-semibold tracking-wide text-neutral-500 uppercase transition-colors duration-300 dark:text-neutral-400">
+          <p className="text-xs tracking-wide text-neutral-500 uppercase transition-colors duration-300 dark:text-neutral-400">
             Impact
           </p>
           <p className="font-raleway mt-1 text-sm font-medium text-neutral-700 transition-colors duration-300 dark:text-neutral-200">
