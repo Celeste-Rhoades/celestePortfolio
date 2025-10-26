@@ -43,7 +43,7 @@
   --font-poiretOne: "poire", "sans-serif";
 }
 
-/* Desktop burst animations - MEDIUM sized, more visible */
+/* Desktop burst animations - expand farther */
 .sparkle-burst {
   position: absolute;
   top: 50%;
@@ -58,8 +58,33 @@
   top: 0;
   font-size: 2.2rem;
   opacity: 1;
-  animation: burst 0.8s ease-out forwards;
+  animation: burst 0.9s ease-out forwards;
   transform: translate(-50%, -50%) rotate(var(--burst-angle)) translateY(-28px);
+}
+
+.burst-star:nth-child(1) {
+  animation-duration: 0.85s;
+  font-size: 2.4rem;
+}
+
+.burst-star:nth-child(2) {
+  animation-duration: 0.95s;
+  font-size: 2rem;
+}
+
+.burst-star:nth-child(3) {
+  animation-duration: 1s;
+  font-size: 2.3rem;
+}
+
+.burst-star:nth-child(4) {
+  animation-duration: 0.9s;
+  font-size: 2.1rem;
+}
+
+.burst-star:nth-child(5) {
+  animation-duration: 0.98s;
+  font-size: 2.5rem;
 }
 
 @keyframes burst {
@@ -68,19 +93,19 @@
     transform: translate(-50%, -50%) scale(0.6) rotate(var(--burst-angle))
       translateY(0) rotate(0deg);
   }
-  80% {
+  70% {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1.8) rotate(var(--burst-angle))
-      translateY(-52px) rotate(288deg);
+    transform: translate(-50%, -50%) scale(2) rotate(var(--burst-angle))
+      translateY(-75px) rotate(250deg);
   }
   100% {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(1.8) rotate(var(--burst-angle))
-      translateY(-60px) rotate(360deg);
+    transform: translate(-50%, -50%) scale(2.2) rotate(var(--burst-angle))
+      translateY(-90px) rotate(360deg);
   }
 }
 
-/* Mobile burst animations - smaller */
+/* Mobile burst animations - expand farther */
 .sparkle-burst-mobile {
   position: absolute;
   top: 50%;
@@ -95,8 +120,28 @@
   top: 0;
   font-size: 1.1rem;
   opacity: 1;
-  animation: burst-mobile 0.8s ease-out forwards;
+  animation: burst-mobile 0.9s ease-out forwards;
   transform: translate(-50%, -50%) rotate(var(--burst-angle)) translateY(-16px);
+}
+
+.burst-star-mobile:nth-child(1) {
+  animation-duration: 0.85s;
+  font-size: 1.2rem;
+}
+
+.burst-star-mobile:nth-child(2) {
+  animation-duration: 0.95s;
+  font-size: 1rem;
+}
+
+.burst-star-mobile:nth-child(3) {
+  animation-duration: 1s;
+  font-size: 1.15rem;
+}
+
+.burst-star-mobile:nth-child(4) {
+  animation-duration: 0.9s;
+  font-size: 1.05rem;
 }
 
 @keyframes burst-mobile {
@@ -105,14 +150,14 @@
     transform: translate(-50%, -50%) scale(0.5) rotate(var(--burst-angle))
       translateY(0) rotate(0deg);
   }
-  80% {
+  70% {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1.4) rotate(var(--burst-angle))
-      translateY(-28px) rotate(288deg);
+    transform: translate(-50%, -50%) scale(1.6) rotate(var(--burst-angle))
+      translateY(-40px) rotate(250deg);
   }
   100% {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(1.4) rotate(var(--burst-angle))
-      translateY(-32px) rotate(360deg);
+    transform: translate(-50%, -50%) scale(1.8) rotate(var(--burst-angle))
+      translateY(-48px) rotate(360deg);
   }
 }

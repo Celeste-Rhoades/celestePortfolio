@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import ClientCarousel from "./ClientCarousel";
 import ErrorBoundary from "./ErrorBoundary";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "./themeToggle";
 
 const Main = () => {
   const featuredProjects = [
