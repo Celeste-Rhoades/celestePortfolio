@@ -3,10 +3,7 @@
   font-family: sourceSans;
   src: url("./assets/fonts/Source_Sans_3/static/SourceSans3-Bold.ttf");
 }
-@font-face {
-  font-family: merriWeather;
-  src: url("./assets/fonts/Merriweather/Merriweather-Regular.ttf");
-}
+
 @font-face {
   font-family: manrope;
   src: url("./assets/fonts/Manrope/static/Manrope-Bold.ttf");
