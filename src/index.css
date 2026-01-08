@@ -75,3 +75,21 @@
       translateY(-48px) rotate(360deg);
   }
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-400px * 4 - 1.5rem * 4)
+    ); /* width of 4 cards + gaps */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}

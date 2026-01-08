@@ -1,7 +1,5 @@
-// import { useState } from "react";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
-
 import "./index.css";
 
 function App() {
@@ -22,4 +20,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
