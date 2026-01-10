@@ -125,15 +125,20 @@ const Main = () => {
 
       <main className="min-h-screen bg-white/95 pb-16 backdrop-blur-sm transition-all duration-300 dark:bg-neutral-800/90">
         <header className="mx-4 border-b border-b-slate-400 pb-6 transition-all duration-300 md:mx-24 md:pb-8 dark:border-b-neutral-600">
-          <h1 className="font-poiretOne mt-8 text-center text-3xl text-neutral-600 transition-all duration-300 md:mt-14 md:text-6xl dark:text-neutral-100">
-            Beyond the Code
+          <h1 className="font-poiretOne mt-8 text-center text-3xl text-neutral-600 transition-all duration-300 md:mt-14 md:text-6xl dark:text-white">
+            What I Do
           </h1>
-          <p className="font-poiretOne mt-3 px-4 text-center text-base text-neutral-600 transition-all duration-300 md:mt-4 md:px-24 md:text-lg dark:text-neutral-200">
+          <p className="font-raleway mt-3 px-4 text-center text-base text-neutral-600 transition-all duration-300 md:mt-4 md:px-24 md:text-lg dark:text-white">
             Hi I&apos;m Celeste
           </p>
-          <p className="font-raleway mt-2 px-4 text-center text-sm text-neutral-500 transition-all duration-300 md:px-24 md:text-base dark:text-neutral-300">
-            Full-stack software engineer specializing in the MERN stack,
-            building scalable applications that solve real problems.
+          <p className="font-raleway mt-2 px-4 text-center text-sm text-neutral-500 transition-all duration-300 md:px-24 md:text-base dark:text-neutral-100">
+            I’m a full-stack engineer who brings a people-first approach and
+            strong systems thinking to every product I build. Years in
+            customer-facing roles, operations leadership, and business ownership
+            shape how I design and ship applications using JavaScript,
+            TypeScript, React, Node, Express, and React Native. I’m drawn to
+            building software that simplifies complex operations while
+            delivering a thoughtful, intuitive experience for users.
           </p>
         </header>
 
