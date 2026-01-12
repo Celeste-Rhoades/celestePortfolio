@@ -37,7 +37,6 @@ const Main = () => {
         "Express",
         "MongoDB",
         "Socket.io",
-        "Passport.js",
         "JWT",
         "Tailwind CSS",
       ],
