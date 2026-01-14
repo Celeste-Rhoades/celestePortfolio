@@ -18,8 +18,6 @@ const Main = () => {
         "Express",
         "MongoDB",
         "Firebase",
-        "Firestore",
-        "Firebase Storage",
       ],
       videoSrc: "/mp4/Back2Calm.mp4",
       githubLink: "https://github.com/Celeste-Rhoades/BackToCalm",
