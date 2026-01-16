@@ -99,7 +99,7 @@ const ProjectCard = ({ project }) => {
               href={project.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-lg bg-slate-200 px-4 py-2 text-sm font-medium text-neutral-800 shadow-md transition-all hover:bg-slate-300 focus:ring-2 focus:ring-slate-400 focus:outline-none dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
+              className="flex items-center gap-2 rounded-lg bg-slate-200 px-4 py-2 text-sm font-medium text-neutral-800 shadow-md transition-all hover:bg-slate-300 focus:ring-2 focus:ring-slate-400 focus:outline-none dark:bg-cyan-400/50 dark:text-white dark:hover:bg-cyan-600/50"
               aria-label={`View ${project.title} code on GitHub`}
             >
               <i className="fa-brands fa-github" aria-hidden="true"></i>
@@ -111,7 +111,7 @@ const ProjectCard = ({ project }) => {
               href={project.liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-lg bg-slate-200 px-4 py-2 text-sm font-medium text-neutral-800 shadow-md transition-all hover:bg-slate-300 focus:ring-2 focus:ring-slate-400 focus:outline-none dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
+              className="flex items-center gap-2 rounded-lg bg-slate-200 px-4 py-2 text-sm font-medium text-neutral-800 shadow-md transition-all hover:bg-slate-300 focus:ring-2 focus:ring-slate-400 focus:outline-none dark:bg-cyan-400/50 dark:text-white dark:hover:bg-cyan-600/50"
               aria-label={`Visit ${project.title} live site`}
             >
               <i
@@ -126,7 +126,7 @@ const ProjectCard = ({ project }) => {
               href={project.marketplaceLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-lg bg-slate-200 px-4 py-2 text-sm font-medium text-neutral-800 shadow-md transition-all hover:bg-slate-300 focus:ring-2 focus:ring-slate-400 focus:outline-none dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
+              className="flex items-center gap-2 rounded-lg bg-slate-200 px-4 py-2 text-sm font-medium text-neutral-800 shadow-md transition-all hover:bg-slate-300 focus:ring-2 focus:ring-slate-400 focus:outline-none dark:bg-cyan-400/50 dark:text-white dark:hover:bg-cyan-600/50"
               aria-label={`View ${project.title} on marketplace`}
             >
               <i className="fa-solid fa-store" aria-hidden="true"></i>
